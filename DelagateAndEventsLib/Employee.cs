@@ -18,11 +18,11 @@ namespace DelagateAndEventsLib
 		}
 
 
-		public void ApplyLeave(int leave)
+		public void ApplyLeave(int days)
 		{
-			if(leave<Leave)
+			if(days<=Leave)
 			{
-				Leave -= leave;
+				Leave -= days;
                 Console.WriteLine(" Leave appiled Successfully. \n Remaining Leave : {0}",Leave);
 			}
 			else
