@@ -12,7 +12,7 @@ namespace Day10Assign
             e.Leave = 10;
             getLeaves d1 = new getLeaves(e.ApplyLeave);
             LeaveEvent += d1;
-            LeaveEvent(9);
+            LeaveEvent(7);
             Console.Read();
         }
     }

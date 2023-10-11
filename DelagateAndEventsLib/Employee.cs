@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DelagateAndEventsLib
 {
-	public delegate void getLeaves(int l);
+	public delegate int getLeaves(int l);
     public class Employee
     {
 		private int leaves;
@@ -18,7 +18,7 @@ namespace DelagateAndEventsLib
 		}
 
 
-		public void ApplyLeave(int days)
+		public int ApplyLeave(int days)
 		{
 			if(days<=Leave)
 			{
@@ -29,6 +29,7 @@ namespace DelagateAndEventsLib
 			{
                 Console.WriteLine("Unable to apply leave , Beacause Leaves remaining :{0}", Leave);
             }
+          return Leave;
 		}
     }
 }
