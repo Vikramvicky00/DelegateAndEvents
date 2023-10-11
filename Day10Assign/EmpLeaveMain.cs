@@ -1,6 +1,5 @@
 ﻿using System;
 using DelagateAndEventsLib;
-using DelegateAndEventsLib;
 namespace Day10Assign
 {
     internal class EmpLeaveMain
